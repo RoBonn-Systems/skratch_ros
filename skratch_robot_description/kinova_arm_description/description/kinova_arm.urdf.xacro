@@ -12,9 +12,6 @@
     <xacro:include filename="gripper/gripper_base.xacro"/>
     <xacro:include filename="gripper/gripper_finger.xacro"/>
     <xacro:include filename="kinova_arm_gazebo.xacro"/>
-    <xacro:include filename="$(find kinova_arm_moveit_config)/config/kinova_arm.ros2_control.xacro"/>
-
-    <xacro:kinova_arm_ros2_control name="kinova_arm" initial_positions_file="$(find kinova_arm_moveit_config)/config/initial_positions.yaml"/>
     
     <link name="arm_base_link">
         <inertial>

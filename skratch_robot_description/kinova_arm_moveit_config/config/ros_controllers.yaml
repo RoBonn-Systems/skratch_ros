@@ -1,0 +1,62 @@
+arm_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - shoulder_joint
+    - half_arm_one_joint
+    - half_arm_two_joint
+    - fore_arm_joint
+    - spherical_wrist_one_joint
+    - spherical_wrist_two_joint
+    - camera_joint
+  gains:
+    shoulder_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    half_arm_one_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    half_arm_two_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    fore_arm_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    spherical_wrist_one_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    spherical_wrist_two_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    camera_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+gripper_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - left_finger_joint
+    - right_finger_joint
+  gains:
+    left_finger_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    right_finger_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
